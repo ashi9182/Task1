@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_modelname"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="16sp"
+        android:hint="modelName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:hint="index"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_modelYear"
+        app:layout_constraintStart_toStartOf="@+id/tv_modelYear"
+        app:layout_constraintTop_toBottomOf="@+id/tv_modelYear" />
+
+    <TextView
+        android:id="@+id/tv_modelYear"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="16sp"
+        android:hint="modelYear"
+        app:layout_constraintEnd_toEndOf="@+id/tv_modelname"
+        app:layout_constraintStart_toStartOf="@+id/tv_modelname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_modelname" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

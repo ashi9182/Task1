@@ -1,21 +1,26 @@
 package com.example.task1.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.task1.api.EmployeeInterface
 import com.example.task1.databinding.ActivityHomeBinding
+import com.example.task1.models.Car
+import com.example.task1.models.Cars
 import com.example.task1.models.Employee
 import com.example.task1.ui.viewmodelFactory.HomeViewModelFactory
 import com.example.task1.ui.viewmodels.HomeActivityViewModel
+import com.google.gson.Gson
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
-    lateinit var homeViewModel: HomeActivityViewModel
+    private lateinit var homeViewModel: HomeActivityViewModel
     private val tag = "HomeActivity"
-    var user: Employee? = null
+    private var user: Employee? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
@@ -27,6 +32,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+
     private fun initializeViewModel( id : Int) {
         val homeViewModelFactory = HomeViewModelFactory(id)
         homeViewModel = ViewModelProvider(this,homeViewModelFactory).get(HomeActivityViewModel::class.java)
@@ -35,7 +41,6 @@ class HomeActivity : AppCompatActivity() {
     private fun getUserData() {
         if (user == null) {
             val employeeDetails: Observer<Employee> = Observer<Employee> { employeeDetails ->
-                Log.d(tag, employeeDetails.message)
                 Log.d(tag, employeeDetails.data.employee_name)
                 user = employeeDetails
                 val text = "Welcome " + user?.data?.employee_name
@@ -44,5 +49,10 @@ class HomeActivity : AppCompatActivity() {
             }
             homeViewModel.employeeDetails.observe(this, employeeDetails)
         }
+    }
+
+    fun goToCar(view: View) {
+        val intent = Intent(this,CarActivity::class.java)
+        startActivity(intent)
     }
 }
