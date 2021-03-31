@@ -13,13 +13,11 @@ class CarActivityViewModel  : ViewModel(){
 
     private val tag = "CarViewModel"
 
-    val cars : MutableLiveData<List<Car>> by lazy {
-        MutableLiveData<List<Car>>()
-    }
+    var cars : List<Car> = mutableListOf()
 
-    val sortedCarsName : MutableLiveData<List<Car>> by lazy {
-        MutableLiveData<List<Car>>()
-    }
+
+    var sortedCarsName : List<Car> = mutableListOf()
+
 
     init {
         getCarsDataByIndex()
@@ -29,7 +27,7 @@ class CarActivityViewModel  : ViewModel(){
         val gson = Gson()
         val data = gson.fromJson(EmployeeInterface.carJsonString, Cars::class.java)
         Log.d(tag,data.cars[0].modelName)
-        cars.value =data.cars
+        cars =data.cars
 
 
     }
@@ -50,6 +48,6 @@ class CarActivityViewModel  : ViewModel(){
                 }
             }
         }
-        sortedCarsName.value = sortedList
+        sortedCarsName = sortedList
     }
 }

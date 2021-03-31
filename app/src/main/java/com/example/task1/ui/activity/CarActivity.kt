@@ -29,36 +29,20 @@ class CarActivity : AppCompatActivity() {
 
     private fun initializeViewModel() {
         carActivityViewModel = ViewModelProvider(this).get(CarActivityViewModel::class.java)
-        setObservables()
-
+        setAdapter()
     }
 
-    private fun setObservables() {
-        if (carsIndex == null) {
-            val carsIndexDetails: Observer<List<Car>> = Observer<List<Car>> { indexDetails ->
-                carsIndex = indexDetails
-            }
-            carActivityViewModel.cars.observe(this, carsIndexDetails)
-        }
-        if (carsName == null) {
-            val carsNameDetails: Observer<List<Car>> = Observer<List<Car>> { nameDetails ->
-                carsName = nameDetails
-                rv_cars.adapter = CarsAdapter(carsName!!)
-            }
-            carActivityViewModel.sortedCarsName.observe(this, carsNameDetails)
-        }
-
+    private fun setAdapter() {
+        rv_cars.adapter = CarsAdapter(carActivityViewModel.sortedCarsName)
     }
 
     fun nameSort(view: View) {
-        if (carsName != null) {
-            rv_cars.adapter = CarsAdapter(carsName!!)
-        }
+        rv_cars.adapter = CarsAdapter(carActivityViewModel.sortedCarsName)
+
     }
 
     fun indexSort(view: View) {
-        if (carsIndex != null){
-            rv_cars.adapter = CarsAdapter(carsIndex!!)
-        }
+        rv_cars.adapter = CarsAdapter(carActivityViewModel.cars)
+
     }
 }
