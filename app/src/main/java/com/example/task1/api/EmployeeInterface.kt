@@ -21,59 +21,6 @@ interface EmployeeInterface {
                 .create(EmployeeInterface::class.java)
         }
 
-        const val carJsonString = "{\n" +
-                "  \"cars\": [\n" +
-                "    {\n" +
-                "      \"modelName\": \"A-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 0\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"C-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 1\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"B-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 2\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"H-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 3\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"J-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 4\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"G-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 5\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"I-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 6\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"D-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 7\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"F-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 8\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"modelName\": \"E-Class\",\n" +
-                "      \"modelYear\": \"2020\",\n" +
-                "      \"index\": 9\n" +
-                "    }\n" +
-                "  ]\n" +
-                "}"
+
     }
 }

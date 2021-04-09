@@ -1,54 +1,54 @@
 {
   "cars": [
     {
-      "modelName": "A-Class",
+      "modelName": "G-Class",
       "modelYear": "2020",
-      "index": 0
-    },
-    {
-      "modelName": "B-Class",
-      "modelYear": "2020",
-      "index": 1
-    },
-    {
-      "modelName": "C-Class",
-      "modelYear": "2020",
-      "index": 2
-    },
-    {
-      "modelName": "D-Class",
-      "modelYear": "2020",
-      "index": 3
-    },
-    {
-      "modelName": "E-Class",
-      "modelYear": "2020",
-      "index": 4
+      "index": 8
     },
     {
       "modelName": "F-Class",
       "modelYear": "2020",
-      "index": 5
+      "index": 1
     },
     {
-      "modelName": "G-Class",
+      "modelName": "B-Class",
       "modelYear": "2020",
       "index": 6
     },
     {
-      "modelName": "H-Class",
+      "modelName": "D-Class",
+      "modelYear": "2020",
+      "index": 9
+    },
+    {
+      "modelName": "J-Class",
+      "modelYear": "2020",
+      "index": 0
+    },
+    {
+      "modelName": "C-Class",
+      "modelYear": "2020",
+      "index": 5
+    },
+    {
+      "modelName": "A-Class",
+      "modelYear": "2020",
+      "index": 4
+    },
+    {
+      "modelName": "E-Class",
       "modelYear": "2020",
       "index": 7
     },
     {
       "modelName": "I-Class",
       "modelYear": "2020",
-      "index": 8
+      "index": 2
     },
     {
-      "modelName": "J-Class",
+      "modelName": "H-Class",
       "modelYear": "2020",
-      "index": 9
+      "index": 3
     }
   ]
 }
