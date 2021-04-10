@@ -23,7 +23,6 @@
         android:layout_marginEnd="25dp"
         android:onClick="nameSort"
         android:text="Name"
-        android:backgroundTint="#1e67b4"
         app:layout_constraintBottom_toBottomOf="@+id/btn_index_car"
         app:layout_constraintEnd_toStartOf="@+id/btn_index_car" />
 
@@ -32,7 +31,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#1e67b4"
         android:onClick="indexSort"
         android:text="Index"
         app:layout_constraintEnd_toEndOf="parent"

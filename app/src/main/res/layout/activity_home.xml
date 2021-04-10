@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
-        android:backgroundTint="#1e67b4"
         android:onClick="goToCar"
         android:text="Cars"
         app:layout_constraintBottom_toBottomOf="parent"

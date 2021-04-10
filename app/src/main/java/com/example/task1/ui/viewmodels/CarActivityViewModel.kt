@@ -35,15 +35,6 @@ class CarActivityViewModel(application: Application) : AndroidViewModel(applicat
         carData.value = remoteCarDetails.value?.cars
     }
 
-    private fun firebaseStorage() {
-        val ref = FirebaseStorage.getInstance().reference.child("cars.json")
-        ref.downloadUrl.addOnSuccessListener {
-            Log.d(tag, it.toString())
-        }
-            .addOnFailureListener {
-                Log.d(tag, it.toString())
-            }
-    }
 
     fun getCarsDataByIndex() {
         val sortedList = mutableListOf<Car>()
