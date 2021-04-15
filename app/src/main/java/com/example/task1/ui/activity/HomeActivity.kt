@@ -77,6 +77,7 @@ class HomeActivity : AppCompatActivity() {
         binding.btnSignout.setOnClickListener {
             signOut()
         }
+
     }
 
     private fun signOut() {
