@@ -18,7 +18,7 @@ class CarRepository {
     fun get(): LiveData<Cars> {
         val itemResponse = MutableLiveData<Cars>()
 
-        CarsInterface().getCars("media", "1d3642ef-24de-4a95-8db6-7ea1e35fe2db")
+        CarsInterface().getCars("media", "fcf64948-ac57-448a-8b3a-2f7e1e0628c8")
             .enqueue(object : Callback<Cars> {
                 override fun onResponse(call: Call<Cars>, response: Response<Cars>) {
                     if (!response.isSuccessful) {

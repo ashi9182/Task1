@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 interface CarsInterface {
 
-    @GET("cars.json")
+    @GET("car2.json")
     fun getCars(
         @Query("alt") type : String,
         @Query("token") token : String
